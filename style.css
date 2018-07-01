@@ -1,0 +1,54 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.container {
+  padding: 0px 40px;
+  margin: auto;
+}
+
+.nav {
+  border: 2px solid black;
+  hieght: 40vh;
+}
+
+.nav ul {
+  padding-left:75%;
+}
+
+.nav li {
+  display: inline;
+  padding-right: 30px;
+}
+
+.section1 {
+  background: red;
+  border: 2px solid black;
+  height: 25vh;
+}
+
+.section2 {
+  background:#333;
+  color:#fff;
+  border:2px solid red;
+  height:25vh;
+}
+
+.section3 {
+  background:#444;
+  color:#fff;
+  border:2px solid blue;
+  height:25vh;
+}
+
+.section4 {
+  background:#999;
+  color:#fff;
+  border:2px solid green;
+  height:25vh;
+}
