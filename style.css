@@ -35,6 +35,19 @@ body {
 .nav a {
   padding-left: 50px;
   text-decoration: none;
+  font-size: 1.75rem;
+}
+
+.linkedin {
+  color:#0077B5;
+}
+
+.github {
+  color:#000;
+}
+
+.codepen {
+  color:#fff;
 }
 
 /* Section 1 */
@@ -98,6 +111,12 @@ body {
   background: rgba(63,63,63.1);
   border: 2px solid #fff;
   border-radius: 10px;
+}
+
+.links button:hover {
+  background:rgba(255,255,255,0.6);
+  color: #000;
+  cursor: pointer;
 }
 
 #btn1 {
