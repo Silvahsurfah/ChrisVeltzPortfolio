@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
 * {
   box-sizing:border-box;
 }
@@ -5,6 +7,7 @@
 body {
   margin:0;
   padding:0;
+  background: #3f3f3f;
 }
 
 .container {
@@ -14,22 +17,48 @@ body {
 
 .nav {
   border: 2px solid black;
-  hieght: 40vh;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  line-height: 45px;
+  animation: gravity;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
-.nav ul {
-  padding-left:75%;
+@keyframes gravity {
+  0% {top: -100px}
+  100% {top: 0px}
 }
 
-.nav li {
-  display: inline;
-  padding-right: 30px;
+.nav a {
+  padding-left: 50px;
+  text-decoration: none;
 }
 
 .section1 {
-  background: red;
+  background: #3f3f3f;
+  font-family: 'Russo One', serif;
+  font-weight: 100;
+  color:#fff;
+  font-size: 1.5rem;
   border: 2px solid black;
-  height: 25vh;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section1 h1 {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
+
+.section1 button {
+
 }
 
 .section2 {
