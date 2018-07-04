@@ -14,10 +14,9 @@ body {
   padding: 0px 40px;
   margin: auto;
 }
-
+/*Nav Bar */
 .nav {
-  border: 2px solid black;
-  background: #fff;
+  background:rgba(255,255,255,0.6);
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -38,14 +37,15 @@ body {
   text-decoration: none;
 }
 
+/* Section 1 */
 .section1 {
   background: #3f3f3f;
   font-family: 'Russo One', serif;
   font-weight: 100;
   color:#fff;
   font-size: 1.5rem;
-  border: 2px solid black;
   height: 100vh;
+  overflow-x:hidden;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
@@ -55,10 +55,88 @@ body {
 .section1 h1 {
   border-bottom: 2px solid #fff;
   width: 100%;
+  position: relative;
+  animation: slide;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
 
-.section1 button {
+@keyframes slide {
+  0%{right:-2000px}
+  100%{right:0px}
+}
 
+.section1 p {
+  margin: -20px;
+  padding-left: 20px;
+  color: #3f3f3f;
+  animation: fade;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fade {
+  0%{color:#3f3f3f;}
+  100%{color:#fff;}
+}
+
+.links {
+  display:flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  margin-top: 50px;
+}
+.links button {
+  margin: 5px 20px;
+  height: 35px;
+  width: 150px;
+  font-family: 'Russo One', serif;
+  color:#fff;
+  background: rgba(63,63,63.1);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+#btn1 {
+  opacity:0;
+  animation: fade1;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade1 {
+  0% {opacity:0;}
+  100% {opacity:1}
+}
+
+#btn2 {
+  opacity:0;
+  animation: fade2;
+  animation-duration: 2s;
+  animation-delay: 3.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade2 {
+  0% {opacity:0;}
+  100% {opacity:1}
+}
+
+#btn3 {
+  opacity:0;
+  animation: fade3;
+  animation-duration: 2s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade3 {
+  0% {opacity:0;}
+  100% {opacity:1}
 }
 
 .section2 {
