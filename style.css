@@ -162,19 +162,19 @@ body {
   background:#333;
   color:#fff;
   border:2px solid red;
-  height:25vh;
+  height:100vh;
 }
 
 .section3 {
   background:#444;
   color:#fff;
   border:2px solid blue;
-  height:25vh;
+  height:100vh;
 }
 
 .section4 {
   background:#999;
   color:#fff;
   border:2px solid green;
-  height:25vh;
+  height:100vh;
 }
